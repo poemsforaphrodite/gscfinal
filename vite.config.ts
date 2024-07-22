@@ -15,6 +15,13 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
+      '@components': path.resolve(__dirname, './src/components')
     },
   },
+  build: {
+    sourcemap: true
+  },
+  optimizeDeps: {
+    include: ['@vueuse/core']
+  }
 })

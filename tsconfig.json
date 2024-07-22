@@ -9,11 +9,13 @@
     }
   ],
   "compilerOptions": {
-    // ...
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
-    }
-    // ...
+      "@/*": ["./src/*"],
+      "@components/*": ["./src/components/*"]
+    },
+    "types": ["vite/client"],
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true
   }
 }
